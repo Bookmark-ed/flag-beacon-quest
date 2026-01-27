@@ -15,8 +15,6 @@ const Index = () => {
             title="10,000 Days of Thunder"
             author="Philip Caputo"
             coverUrl="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348808744i/588347.jpg"
-            challengeCount={3}
-            banCount={0}
           />
           <AgeAppropriateness />
           <FlagsTable />

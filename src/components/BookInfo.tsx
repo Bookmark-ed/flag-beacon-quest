@@ -4,11 +4,9 @@ interface BookInfoProps {
   title: string;
   author: string;
   coverUrl: string;
-  challengeCount: number;
-  banCount: number;
 }
 
-const BookInfo = ({ title, author, coverUrl, challengeCount, banCount }: BookInfoProps) => {
+const BookInfo = ({ title, author, coverUrl }: BookInfoProps) => {
   return (
     <div className="flex gap-8 mb-8">
       <div className="w-40 h-56 rounded-lg overflow-hidden shadow-lg flex-shrink-0">
@@ -32,19 +30,10 @@ const BookInfo = ({ title, author, coverUrl, challengeCount, banCount }: BookInf
         
         <hr className="border-border mb-6" />
         
-        <h2 className="text-xl font-bold text-foreground mb-4">Challenges and Bans</h2>
-        <div className="flex gap-6">
-          <div className="flex-1 border border-border rounded-lg p-6 text-center">
-            <div className="text-5xl font-bold text-foreground mb-1">{challengeCount}</div>
-            <div className="text-sm text-muted-foreground">Times</div>
-            <div className="text-primary font-medium">Challenges</div>
-          </div>
-          <div className="flex-1 border border-border rounded-lg p-6 text-center">
-            <div className="text-5xl font-bold text-foreground mb-1">{banCount}</div>
-            <div className="text-sm text-muted-foreground">Times</div>
-            <div className="text-primary font-medium">Bans</div>
-          </div>
-        </div>
+        <h2 className="text-xl font-bold text-foreground mb-4">Content Analysis</h2>
+        <p className="text-muted-foreground">
+          This section provides an overview of the content analysis for this title, including themes, language, and subject matter considerations.
+        </p>
       </div>
     </div>
   );
