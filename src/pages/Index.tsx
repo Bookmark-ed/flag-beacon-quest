@@ -1,11 +1,24 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import Header from "@/components/Header";
+import Sidebar from "@/components/Sidebar";
+import BookInfo from "@/components/BookInfo";
+import FlagsTable from "@/components/FlagsTable";
 
 const Index = () => {
   return (
-    <div className="flex min-h-screen items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="mb-4 text-4xl font-bold">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
+    <div className="min-h-screen bg-background flex flex-col">
+      <Header />
+      <div className="flex flex-1">
+        <Sidebar />
+        <main className="flex-1 p-8">
+          <BookInfo
+            title="10,000 Days of Thunder"
+            author="Philip Caputo"
+            coverUrl="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348808744i/588347.jpg"
+            challengeCount={3}
+            banCount={0}
+          />
+          <FlagsTable />
+        </main>
       </div>
     </div>
   );
