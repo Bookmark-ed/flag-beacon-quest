@@ -1,6 +1,7 @@
 import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import BookInfo from "@/components/BookInfo";
+import AgeAppropriateness from "@/components/AgeAppropriateness";
 import FlagsTable from "@/components/FlagsTable";
 
 const Index = () => {
@@ -17,6 +18,7 @@ const Index = () => {
             challengeCount={3}
             banCount={0}
           />
+          <AgeAppropriateness />
           <FlagsTable />
         </main>
       </div>
