@@ -47,8 +47,11 @@ const sampleFlags: Flag[] = [
 const FlagsTable = () => {
   return (
     <div className="bg-card rounded-lg border border-border overflow-hidden">
-      <div className="p-4 border-b border-border">
+      <div className="p-4 border-b border-border flex items-center gap-2">
         <h3 className="text-lg font-semibold text-card-foreground">Flags</h3>
+        <span className="bg-primary/10 text-primary text-sm font-medium px-2 py-0.5 rounded-full">
+          {sampleFlags.length}
+        </span>
       </div>
       <Table>
         <TableHeader>
