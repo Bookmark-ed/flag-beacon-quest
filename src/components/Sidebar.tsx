@@ -22,7 +22,7 @@ const Sidebar = () => {
   return (
     <aside className="w-56 flex flex-col gap-2 p-4">
       <SidebarItem label="General Information" />
-      <SidebarItem label="Challenge and Ban Details" active />
+      <SidebarItem label="Flags and Analysis" active />
       <SidebarItem label="Guardian Activities" />
       <SidebarItem label="Status History" />
       <SidebarItem label="Discover" />
