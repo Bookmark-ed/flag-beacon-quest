@@ -31,9 +31,22 @@ const BookInfo = ({ title, author, coverUrl }: BookInfoProps) => {
         <hr className="border-border mb-6" />
         
         <h2 className="text-xl font-bold text-foreground mb-4">Content Analysis</h2>
-        <p className="text-muted-foreground">
+        <p className="text-muted-foreground mb-6">
           This section provides an overview of the content analysis for this title, including themes, language, and subject matter considerations.
         </p>
+
+        <h2 className="text-xl font-bold text-foreground mb-4">Awards and Recognition</h2>
+        <div className="flex flex-wrap gap-2">
+          <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
+            California Young Reader Medal
+          </Badge>
+          <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
+            Georgia Peach Book Award
+          </Badge>
+          <Badge variant="outline" className="text-primary border-primary/30 bg-primary/5">
+            Golden Duck Award
+          </Badge>
+        </div>
       </div>
     </div>
   );
