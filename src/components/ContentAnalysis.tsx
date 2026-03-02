@@ -8,25 +8,25 @@ const ContentAnalysis = () => {
       <div className="bg-card rounded-lg border border-border p-6">
         <h3 className="text-lg font-semibold text-card-foreground mb-4">Status & Risk Overview</h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-emerald-500/10 border border-emerald-500/20">
-            <ShieldCheck className="h-6 w-6 text-emerald-600 mb-2" />
+          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-success/15 border-2 border-success/30">
+            <ShieldCheck className="h-6 w-6 text-success mb-2" />
             <div className="text-sm text-muted-foreground">Ban Status</div>
-            <div className="text-lg font-bold text-emerald-600">CLEAR</div>
+            <div className="text-lg font-bold text-success">CLEAR</div>
           </div>
-          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-amber-500/10 border border-amber-500/20">
-            <ShieldAlert className="h-6 w-6 text-amber-600 mb-2" />
+          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-warning/15 border-2 border-warning/30">
+            <ShieldAlert className="h-6 w-6 text-warning mb-2" />
             <div className="text-sm text-muted-foreground">Challenge Risk</div>
-            <div className="text-lg font-bold text-amber-600">Low</div>
+            <div className="text-lg font-bold text-warning">Low</div>
           </div>
-          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-muted/50 border border-border">
-            <AlertTriangle className="h-5 w-5 text-muted-foreground mb-2" />
+          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-info/15 border-2 border-info/30">
+            <AlertTriangle className="h-5 w-5 text-info mb-2" />
             <div className="text-sm text-muted-foreground">Parental Guidance</div>
-            <div className="text-lg font-bold text-foreground">Yes</div>
+            <div className="text-lg font-bold text-info">Yes</div>
           </div>
-          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-muted/50 border border-border">
-            <BookOpen className="h-5 w-5 text-muted-foreground mb-2" />
+          <div className="flex flex-col items-center text-center p-4 rounded-lg bg-primary/10 border-2 border-primary/30">
+            <BookOpen className="h-5 w-5 text-primary mb-2" />
             <div className="text-sm text-muted-foreground">Reading Level</div>
-            <div className="text-lg font-bold text-foreground">Adult</div>
+            <div className="text-lg font-bold text-primary">Adult</div>
           </div>
         </div>
       </div>
@@ -40,21 +40,21 @@ const ContentAnalysis = () => {
               <Eye className="h-4 w-4 text-muted-foreground" />
               <span className="text-sm font-medium text-foreground">Violence</span>
             </div>
-            <Badge variant="outline" className="bg-amber-500/10 text-amber-700 border-amber-500/30">Mild</Badge>
+            <Badge className="bg-warning/20 text-warning-foreground border-warning/40 font-semibold" variant="outline">Mild</Badge>
           </div>
           <div className="flex items-center justify-between p-3 rounded-lg border border-border">
             <div className="flex items-center gap-2">
               <Eye className="h-4 w-4 text-muted-foreground" />
               <span className="text-sm font-medium text-foreground">Sexual Content</span>
             </div>
-            <Badge variant="outline" className="bg-amber-500/10 text-amber-700 border-amber-500/30">Implied</Badge>
+            <Badge className="bg-warning/20 text-warning-foreground border-warning/40 font-semibold" variant="outline">Implied</Badge>
           </div>
           <div className="flex items-center justify-between p-3 rounded-lg border border-border">
             <div className="flex items-center gap-2">
               <MessageSquare className="h-4 w-4 text-muted-foreground" />
               <span className="text-sm font-medium text-foreground">Language</span>
             </div>
-            <Badge variant="outline" className="bg-amber-500/10 text-amber-700 border-amber-500/30">Some mild profanity</Badge>
+            <Badge className="bg-warning/20 text-warning-foreground border-warning/40 font-semibold" variant="outline">Some mild profanity</Badge>
           </div>
         </div>
       </div>
@@ -63,25 +63,25 @@ const ContentAnalysis = () => {
       <div className="bg-card rounded-lg border border-border p-6">
         <h3 className="text-lg font-semibold text-card-foreground mb-4">Grade Level Suitability</h3>
         <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-          <div className="flex items-center gap-3 p-3 rounded-lg border border-border">
-            <XCircle className="h-5 w-5 text-destructive flex-shrink-0" />
+          <div className="flex items-center gap-3 p-3 rounded-lg border-2 border-danger/30 bg-danger/10">
+            <XCircle className="h-5 w-5 text-danger flex-shrink-0" />
             <div>
               <div className="text-sm font-medium text-foreground">Elementary</div>
-              <div className="text-xs text-muted-foreground">Not recommended</div>
+              <div className="text-xs font-semibold text-danger">Not recommended</div>
             </div>
           </div>
-          <div className="flex items-center gap-3 p-3 rounded-lg border border-border">
-            <XCircle className="h-5 w-5 text-destructive flex-shrink-0" />
+          <div className="flex items-center gap-3 p-3 rounded-lg border-2 border-danger/30 bg-danger/10">
+            <XCircle className="h-5 w-5 text-danger flex-shrink-0" />
             <div>
               <div className="text-sm font-medium text-foreground">Middle School</div>
-              <div className="text-xs text-muted-foreground">Not recommended</div>
+              <div className="text-xs font-semibold text-danger">Not recommended</div>
             </div>
           </div>
-          <div className="flex items-center gap-3 p-3 rounded-lg border border-border">
-            <CheckCircle className="h-5 w-5 text-emerald-600 flex-shrink-0" />
+          <div className="flex items-center gap-3 p-3 rounded-lg border-2 border-success/30 bg-success/10">
+            <CheckCircle className="h-5 w-5 text-success flex-shrink-0" />
             <div>
               <div className="text-sm font-medium text-foreground">High School</div>
-              <div className="text-xs text-muted-foreground">Appropriate</div>
+              <div className="text-xs font-semibold text-success">Appropriate</div>
             </div>
           </div>
         </div>
@@ -93,7 +93,8 @@ const ContentAnalysis = () => {
           <h3 className="text-lg font-semibold text-card-foreground mb-3">Potential Concerns</h3>
           <div className="flex flex-wrap gap-2">
             {["Supernatural elements", "Mature themes"].map((concern) => (
-              <Badge key={concern} variant="outline" className="bg-amber-500/10 text-amber-700 border-amber-500/30">
+              <Badge key={concern} className="bg-warning/20 text-warning-foreground border-warning/40 font-semibold px-3 py-1" variant="outline">
+                <AlertTriangle className="h-3 w-3 mr-1" />
                 {concern}
               </Badge>
             ))}
@@ -103,7 +104,7 @@ const ContentAnalysis = () => {
           <h3 className="text-lg font-semibold text-card-foreground mb-3">Mature Themes</h3>
           <div className="flex flex-wrap gap-2">
             {["Infidelity", "Mental illness", "Suicide", "Alcoholism", "Supernatural elements"].map((theme) => (
-              <Badge key={theme} variant="outline" className="bg-destructive/10 text-destructive border-destructive/30">
+              <Badge key={theme} className="bg-danger/15 text-danger border-danger/40 font-semibold px-3 py-1" variant="outline">
                 {theme}
               </Badge>
             ))}
@@ -112,8 +113,11 @@ const ContentAnalysis = () => {
       </div>
 
       {/* Content Warnings */}
-      <div className="bg-card rounded-lg border border-border p-6">
-        <h3 className="text-lg font-semibold text-card-foreground mb-3">Content Warnings</h3>
+      <div className="bg-card rounded-lg border-2 border-danger/30 p-6">
+        <h3 className="text-lg font-semibold text-danger mb-3 flex items-center gap-2">
+          <AlertTriangle className="h-5 w-5" />
+          Content Warnings
+        </h3>
         <div className="flex flex-wrap gap-2">
           {[
             "Violence",
@@ -121,7 +125,7 @@ const ContentAnalysis = () => {
             "Psychological Distress",
             "Possible Supernatural Elements",
           ].map((warning) => (
-            <Badge key={warning} variant="outline" className="bg-destructive/10 text-destructive border-destructive/30">
+            <Badge key={warning} className="bg-danger/20 text-danger border-danger/50 font-semibold px-3 py-1" variant="outline">
               <AlertTriangle className="h-3 w-3 mr-1" />
               {warning}
             </Badge>
@@ -140,7 +144,7 @@ const ContentAnalysis = () => {
             "Suburban Life",
             "Fear of the Unknown",
           ].map((theme) => (
-            <Badge key={theme} variant="outline" className="text-primary border-primary/30 bg-primary/5">
+            <Badge key={theme} className="bg-info/15 text-info border-info/40 font-semibold px-3 py-1" variant="outline">
               {theme}
             </Badge>
           ))}
