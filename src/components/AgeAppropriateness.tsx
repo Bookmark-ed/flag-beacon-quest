@@ -8,7 +8,7 @@ const AgeAppropriateness = ({
   recommendedAgeRange = "12-18 years",
   gradeEquivalent = "7th-12th Grade",
   readingLevel = "Middle School+",
-}: Partial<AgeAppropriatenessProps>) => {
+}: AgeAppropriatenessProps) => {
   return (
     <div className="bg-card rounded-lg border border-border p-6 mb-6">
       <h3 className="text-lg font-semibold text-card-foreground mb-4">Age Appropriateness</h3>

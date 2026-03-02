@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Sidebar from "@/components/Sidebar";
 import BookInfo from "@/components/BookInfo";
 import AgeAppropriateness from "@/components/AgeAppropriateness";
+import ContentAnalysis from "@/components/ContentAnalysis";
 import FlagsTable from "@/components/FlagsTable";
 
 const Index = () => {
@@ -16,8 +17,15 @@ const Index = () => {
             author="Philip Caputo"
             coverUrl="https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1348808744i/588347.jpg"
           />
-          <AgeAppropriateness />
-          <FlagsTable />
+          <AgeAppropriateness
+            recommendedAgeRange="16-99"
+            gradeEquivalent="11-12"
+            readingLevel="Adult"
+          />
+          <ContentAnalysis />
+          <div className="mt-6">
+            <FlagsTable />
+          </div>
         </main>
       </div>
     </div>
