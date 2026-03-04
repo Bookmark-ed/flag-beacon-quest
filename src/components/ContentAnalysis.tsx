@@ -4,13 +4,6 @@ import { ShieldCheck, ShieldAlert, AlertTriangle, BookOpen, Eye, MessageSquare, 
 const ContentAnalysis = () => {
   return (
     <div className="space-y-6">
-      {/* Book Description */}
-      <div className="bg-card rounded-lg border border-border p-6">
-        <h3 className="text-lg font-semibold text-card-foreground mb-3">Description</h3>
-        <p className="text-muted-foreground text-sm leading-relaxed">
-          For fans of Not Quite a Ghost and Ghost Squad, acclaimed middle grade author Ellen Oh of Spirit Hunters and an APALA Honoree delivers a new spooky novel about young hero Rory and the creepy house next door. Filled with scary spirits, mysterious noises, and malevolent forces, the house has tormented many souls, and Rory must do everything he can to prevent the new neighbors from becoming its next victims. We Need Diverse Books cofounder Ellen Oh delivers another heart-pounding story that you won't be able to put down. Home is where the sinister lives. Rory Parker knows not to step a foot in, on, or around the house next door. He's seen things creeping in the shadows, has had encounters with spirits, and lost a best friend to the house's malevolence. But when his new neighbors, Jack and his lovable family, move into the house next door, Rory makes it his duty to protect them at all costs. But the vicious forces lying within the house are plotting something evil, something that puts Jack's little sister in extreme danger. Soon, Rory understands he'll need the help of his new friend and some friendly ghosts in order to stand a chance at defeating whatever lurks within its walls for good. But what exactly lives in the house next door, and will Rory and Jack find out in time to save the day, or can its evil never be evicted?
-        </p>
-      </div>
 
       {/* Status & Risk Overview */}
       <div className="bg-card rounded-lg border border-border p-6">
